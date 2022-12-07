@@ -1,0 +1,94 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #213053;
+    /* Браузер по умолчанию для тега body выставляет margin: 8px, нужно обнулить */
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header__logo {
+    height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #213053;
+}
+
+header a {
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 25px;
+}
+
+/* font-family, font-size — задают семейство шрифтов и размер;
+color указывает цвет текста, белый (#fff);
+background-color — указывает цвет фона кнопки, зеленый (#23a030);
+border: none — нужен потому что браузер рисует у всех кнопок границу, нам она ни к чему;
+border-radius: 15px — говорит о том, что нужны скругления и 15px — это радиус скругления: чем он больше, тем более скругленная кнопка будет;
+cursor: pointer — делает так, чтобы при наведении на кнопку мышка была в виде указателя;
+box-shadow — самый интересный, он рисует тень! */
+
+button {
+    font-family: 'Raleway', sans—serif;
+    font-size: 15px;
+    color: #fff;
+    background-color: #23a030;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    /* 0 — это отступ тени по горизонтали, 16px — отступ по вертикали, 
+    36px — размытость тени, а rgb(52 213 68 / 22%) — это цвет тени. */
+    box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
+    padding: 15px;
+}
+
+.about_image {
+    width: 500px;
+}
+
+.about_sun-image {
+    width: 100px;
+    height: 100px;
+}
+
+.about {
+    padding-top: 115px;
+    padding-bottom: 115px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url('img/back.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.about h1 {
+    font-size: 70px;
+    line-height: 76px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 30px;
+    /* прозрачность текста */
+    opacity: 0.8;
+}
+
+.about button {
+    font-size: 18px;
+    /* закругление кнопки */
+    border-radius: 20px;
+    padding: 20px 25px;
+    margin-top: 20px;
+}
+
+.about_info {
+    max-width: 550px;
+}
