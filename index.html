@@ -13,8 +13,8 @@
 
 <body>
     <header>
-        <img class="header__logo" src='img/logo.svg'>
-        <div class="header__controls">
+        <img class="header_logo" src='img/logo.svg'>
+        <div class="header_controls">
             <a href="#contacts">Контакты</a>
             <button>Заказать</button>
         </div>
@@ -24,19 +24,43 @@
         <div class="about_info">
             <h1>Солнечные панели GreenRobotic</h1>
             <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio a veniam maxime doloremque beatae quisquam
-                harum explicabo sunt consequatur blanditiis nisi saepe vel culpa aliquid est, eligendi odit molestiae,
-                temporibus officia laudantium suscipit, voluptate laborum repudiandae? Impedit repellendus, iste rerum
-                deserunt quisquam officiis ipsam tenetur exercitationem quos, soluta nihil! Accusamus, maiores dicta
-                perferendis voluptatem aliquid ea, repellat dolor ex eius dolorem aperiam saepe voluptas amet, a magni
-                libero? Dolorem deserunt, dolores quaerat fuga, similique, totam vero officiis magnam recusandae
-                consequuntur necessitatibus! Minima nulla soluta aliquid modi sint aliquam reprehenderit recusandae
-                magnam quo fuga, incidunt, suscipit repellat et sed nisi libero?</p>
             <button>Узнать подробнее</button>
         </div>
         <div class="about_images">
             <img class="about_sun-image" src="img/sun.png">
             <img class="about_image" src="img/solar-panel.png">
+        </div>
+
+    </section>
+    <section class="form">
+        <div class="form_container">
+            <h1>Оставьте свои контакты</h1>
+            <p>Поможем подобрать модель. <br> Выбрать удобный вариант доставки и установки. <br> Гарантия возврата
+                денег.</p>
+            <form>
+                <div class="form_group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" placeholder="Введите имя" id="name">
+                </div>
+                <div class="form_group">
+                    <label for="email">Ваш e-mail</label>
+                    <input type="email" placeholder="***@yandex.ru" id="email">
+                </div>
+                <div class="form_group">
+                    <label for="phone">Ваш телефон</label>
+                    <input type="tel" placeholder="7(999)999-99-99" id="phone">
+                </div>
+                <div class="form_group">
+                    <label for="budget">Примерный бюджет</label>
+                    <select id="budget">
+                        <option value="10-30">10 000₽ – 30 000₽</option>
+                        <option value="30-60">30 000₽ – 60 000₽</option>
+                        <option value="60-100">60 000₽ – 100 000₽</option>
+                        <option value="100+">100 000₽</option>
+                    </select>
+                </div>
+                <button class="form_submit" type="submit">Отправить заявку</button>
+            </form>
         </div>
     </section>
 </body>
