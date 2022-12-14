@@ -220,3 +220,74 @@ footer {
         transform: rotate(360deg);
     }
 }
+
+/* Макет мобильной версии - телефоны */
+@media (max-width: 720px) {
+    header {
+        padding: 10px;
+    }
+
+    .header_logo {
+        height: 20px;
+    }
+
+    header a {
+        margin-right: 10px;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+        padding: 50px 10px;
+    }
+
+    .about h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .about_image {
+        width: 280px;
+    }
+
+    .about_sun-image {
+        width: 75px;
+        height: 75px;
+    }
+
+    .form {
+        padding: 50px 10px;
+    }
+
+    .form h1 {
+        font-size: 36px;
+    }
+
+    footer {
+        padding: 50px 10px;
+    }
+
+    .footer_container {
+        flex-direction: column;
+    }
+}
+
+/* Макет мобильной версии - планшеты */
+@media (max-width: 1024px) {
+    .about {
+        padding: 115px 20px;
+    }
+
+    .about h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .about_image {
+        width: 280px;
+    }
+
+    .about_sun-image {
+        width: 75px;
+        height: 75px;
+    }
+}
