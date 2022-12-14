@@ -60,6 +60,9 @@ button {
 
 .about_images {
     position: relative;
+    animation-name: animation-img;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 }
 
 .about_sun-image {
@@ -104,6 +107,9 @@ button {
 
 .about_info {
     max-width: 550px;
+    animation-name: animation-img;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 }
 
 .form {
@@ -218,6 +224,16 @@ footer {
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes animation-img {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
