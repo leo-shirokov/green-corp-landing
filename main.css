@@ -218,6 +218,38 @@ button {
   border-radius: 25px;
 }
 
+.promo-box p {
+  opacity: 80%;
+}
+
+.promo-box p::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ec6b29;
+  margin-right: 10px;
+}
+
+.promo-button {
+  display: flex;
+  justify-content: center;
+}
+
+.promo-button button {
+  background-color: #107b1c;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 30px;
+}
+
+.promo-box button i {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
 .promo_right {
   background-color: #dd5f26;
   padding: 160px 60px 160px 60px;
