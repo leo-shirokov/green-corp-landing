@@ -43,6 +43,13 @@ button {
   transition: background-color 0.3s ease-in;
 }
 
+.orb-canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
 .about_image {
   width: 500px;
 }
@@ -61,6 +68,7 @@ button {
 }
 
 .about {
+  position: relative;
   padding-top: 115px;
   padding-bottom: 115px;
   display: flex;
@@ -142,6 +150,7 @@ button {
 }
 
 .features_border {
+  width: 100%;
   margin: 50px 0px;
   border: 1px solid #e6eaf4;
 }
@@ -425,7 +434,7 @@ footer {
 
   .features_feedback-right {
     flex-direction: column;
-    align-items: stretch;
+    align-items: initial;
   }
 
   .features_box h3 {
