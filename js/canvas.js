@@ -1,4 +1,11 @@
-const COLORS = ["255,108,80", "5,117,18", "29,39,57", "67,189,81"];
+const COLORS = [
+  "0, 87, 184",
+  "255, 215, 0",
+  "0, 87, 185",
+  "255, 215, 1",
+  "0, 87, 186",
+  "255, 215, 2",
+];
 const BUBBLE_DENSITY = 100;
 
 function generateDecimalBetween(left, right) {
@@ -18,8 +25,9 @@ class Bubble {
     this.canvasHeight = this.canvas.clientHeight;
   }
 
+  //7.4
   init() {
-    this.color = COLORS[Math.floor(Math.random() * (COLORS.length - 1))];
+    this.color = COLORS[Math.floor(Math.random() * COLORS.length - 1)];
     this.size = generateDecimalBetween(1, 3);
     this.alpha = generateDecimalBetween(5, 10) / 10;
     this.translateX = generateDecimalBetween(0, this.canvasWidth);
