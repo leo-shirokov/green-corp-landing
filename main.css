@@ -9,10 +9,18 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  position: sticky;
+  position: fixed;
   top: 0;
-  background-color: #fff;
+  left: 0;
+  right: 0;
+  background-color: transparent;
   z-index: 1;
+  transition: 0.25s all ease;
+}
+
+.header_scrolled {
+  background-color: #fff;
+  box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
 }
 
 .header_logo {
@@ -69,7 +77,7 @@ button {
 
 .about {
   position: relative;
-  padding-top: 115px;
+  padding-top: 200px;
   padding-bottom: 115px;
   display: flex;
   justify-content: space-around;
