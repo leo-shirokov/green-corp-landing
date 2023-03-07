@@ -6,6 +6,7 @@ const COLORS = [
   "0, 87, 186",
   "255, 215, 2",
 ];
+
 const BUBBLE_DENSITY = 100;
 
 function generateDecimalBetween(left, right) {
@@ -25,7 +26,6 @@ class Bubble {
     this.canvasHeight = this.canvas.clientHeight;
   }
 
-  //7.4
   init() {
     this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
     this.size = generateDecimalBetween(1, 3);
@@ -38,8 +38,8 @@ class Bubble {
   }
 
   move() {
-    this.translateX = this.translateX - this.movementX;
-    this.translateY = this.translateY - this.movementY;
+    this.translateX -= this.movementX;
+    this.translateY -= this.movementY;
     if (
       this.translateY < 0 ||
       this.translateX < 0 ||
@@ -84,7 +84,7 @@ class CanvasBackground {
       this.ctx.translate(bubble.translateX, bubble.translateY);
       this.ctx.beginPath();
       this.ctx.arc(0, 0, bubble.size, 0, 2 * Math.PI);
-      this.ctx.fillStyle = "rgba(" + bubble.color + "," + bubble.alpha + ")";
+      this.ctx.fillStyle = `rgba(${bubble.color},${bubble.alpha})`;
       this.ctx.fill();
       this.ctx.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
     });
